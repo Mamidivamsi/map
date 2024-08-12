@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body{
+    background: #CADCFC;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "nav nav nav"
+    "ls main rs"
+    "ft ft ft"
+    ;
+}
+header{
+    grid-area: nav;
+}
+nav{
+    background:#00246B ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1rem 2rem;
+    border:1px #CADCFC transparent;
+}
+.boeder:hover{
+    border:1.5px solid #CADCFC  ;
+}
+nav > ul{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border:1px #CADCFC transparent;
+}
+li:hover{
+    border: 1.5px #CADCFC solid;
+    border-radius: 10%;
+}
+.btn{
+    padding: 0.5rem 1.5rem;
+    background: #CADCFC;
+    border-radius: 0.4rem;
+    color: #00246B;
+}
